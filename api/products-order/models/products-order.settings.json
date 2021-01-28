@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "products_orders",
   "info": {
-    "name": "Product",
-    "description": ""
+    "name": "ProductsOrder"
   },
   "options": {
     "increments": true,
@@ -11,6 +10,9 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "owner": {
+      "type": "string"
+    },
     "image_url": {
       "type": "string"
     },
@@ -18,9 +20,6 @@
       "type": "string"
     },
     "price": {
-      "type": "string"
-    },
-    "owner": {
       "type": "string"
     }
   }
